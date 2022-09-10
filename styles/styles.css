@@ -25,6 +25,10 @@ main{
 
 caption{
     margin: 5% 0;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-radius: 15px;
+    text-shadow: 2px 2px 1px #ccc;
 }
 
 table{
@@ -42,7 +46,10 @@ tr, td{
     height: 32%;
 }
 
-
+#placar{
+    border-top: 1px solid black;
+    text-shadow: 2px 2px 2px #ccc;
+}
 
 .flex{
     display: flex;
