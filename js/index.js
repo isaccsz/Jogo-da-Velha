@@ -3,10 +3,10 @@ let gameboard_x = [5];
 let gameboard_o = [4];
 let aux_x = 0;
 let aux_o = 0;
-let total;
-let playerOne;
-let playerTwo;
-let velha;
+let total = 0;
+let playerOne = 0;
+let playerTwo = 0;
+let velha = 0;
 
 const winningSequences = [
     [1,2,3],
@@ -133,7 +133,7 @@ function winTheGame(){
     let i;
     let j;
     let k;
-    let num;
+    let num=0;
 
     for(i=0;i<8;i++){
         for(j=0;j<3;j++){
@@ -177,7 +177,9 @@ function winTheGame(){
                 num=0;
             }
         }
-    }else if(total==8){
+    }
+
+    if(total==9){
         playerWon(3);
     }
     
@@ -185,9 +187,8 @@ function winTheGame(){
 
 function playerWon(playerNumber){
 
-
     if(playerNumber==1){
-        playerOne+=1;
+        playerOne++;
         document.getElementById('x').innerHTML=playerOne;
         restartGame();
     }else if(playerNumber==2){
@@ -207,6 +208,7 @@ function restartGame(){
     gameboard_o = [0, 0, 0, 0];
     aux_x = 0;
     aux_o = 0;
+    total = 0;
     document.getElementById('cell_1').innerHTML = '';
     document.getElementById('cell_2').innerHTML = '';
     document.getElementById('cell_3').innerHTML = '';
