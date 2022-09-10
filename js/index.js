@@ -126,7 +126,8 @@ function winTheGame(){
                 break;
             }
         }
-        if(num==3){ 
+        if(num==3){
+            playerWon(1);
             break;
         }else{
             num=0;
@@ -147,14 +148,49 @@ function winTheGame(){
                     break;
                 }
             }
-            if(num==3){ 
+            if(num==3){
+                playerWon(2);
                 break;
             }else{
                 num=0;
             }
         }
+    }else if(aux_x==5 && aux_o==4 && num!=3){
+        playerWon(3);
     }
     
 }
 
+function playerWon(playerNumber){
+    let playerOne = document.getElementById('x').innerHTML;
+    let playerTwo = document.getElementById('o').innerHTML;
+    let velha = document.getElementById('v').innerHTML;
 
+    if(playerNumber==1){
+        document.getElementById('x').innerHTML = playerOne + 1;
+        restartGame();
+    }else if(playerNumber==2){
+        document.getElementById('o').innerHTML = playerTwo + 1;
+        restartGame();
+    }else{
+        document.getElementById('v').innerHTML = velha + 1;
+        restartGame();
+    }
+}
+
+function restartGame(){
+    player = 1;
+    gameboard_x = [0, 0, 0, 0, 0];
+    gameboard_o = [0, 0, 0, 0];
+    aux_x = 0;
+    aux_o = 0;
+    document.getElementById('cell_1').innerHTML = '';
+    document.getElementById('cell_2').innerHTML = '';
+    document.getElementById('cell_3').innerHTML = '';
+    document.getElementById('cell_4').innerHTML = '';
+    document.getElementById('cell_5').innerHTML = '';
+    document.getElementById('cell_6').innerHTML = '';
+    document.getElementById('cell_7').innerHTML = '';
+    document.getElementById('cell_8').innerHTML = '';
+    document.getElementById('cell_9').innerHTML = '';
+}

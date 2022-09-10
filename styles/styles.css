@@ -5,6 +5,7 @@ html{
 body{
     width: 100%;
     height: 100%;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +17,7 @@ body{
 main{
     margin: 0 auto;
     width: 40%;
-    height: 70%;
+    height: 80%;
     background-color: rgba(204, 204, 204, 0.3);
 }
 
@@ -27,7 +28,7 @@ caption{
 table{
     margin: 0 auto;
     width: 70%;
-    height: 70%;
+    height: 65%;
 }
 
 tr, td{
@@ -39,11 +40,12 @@ tr, td{
     height: 32%;
 }
 
-#placar{
+
+
+.flex{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     height: 10%;
 }
 
