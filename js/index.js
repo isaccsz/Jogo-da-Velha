@@ -3,6 +3,10 @@ let gameboard_x = [5];
 let gameboard_o = [4];
 let aux_x = 0;
 let aux_o = 0;
+let total;
+let playerOne;
+let playerTwo;
+let velha;
 
 const winningSequences = [
     [1,2,3],
@@ -25,38 +29,47 @@ function playerTurn(numID){
             case 'cell_1':
                 gameboard_x[aux_x]=1;
                 aux_x+=1;
+                total+=1;
                 break;
             case 'cell_2':
                 gameboard_x[aux_x]=2;
                 aux_x+=1;
+                total+=1;
                 break;
             case 'cell_3':
                 gameboard_x[aux_x]=3;
                 aux_x+=1;
+                total+=1;
                 break;
             case 'cell_4':
                 gameboard_x[aux_x]=4;
                 aux_x+=1;
+                total+=1;
                 break;
             case 'cell_5':
                 gameboard_x[aux_x]=5;
                 aux_x+=1;
+                total+=1;
                 break;
             case 'cell_6':
                 gameboard_x[aux_x]=6;
                 aux_x+=1;
+                total+=1;
                 break;
             case 'cell_7':
                 gameboard_x[aux_x]=7;
                 aux_x+=1;
+                total+=1;
                 break;
             case 'cell_8':
                 gameboard_x[aux_x]=8;
                 aux_x+=1;
+                total+=1;
                 break;
             case 'cell_9':
                 gameboard_x[aux_x]=9;
                 aux_x+=1;
+                total+=1;
                 break;
         }
 
@@ -68,38 +81,47 @@ function playerTurn(numID){
             case 'cell_1':
                 gameboard_o[aux_o]=1;
                 aux_o+=1;
+                total+=1;
                 break;
             case 'cell_2':
                 gameboard_o[aux_o]=2;
                 aux_o+=1;
+                total+=1;
                 break;
             case 'cell_3':
                 gameboard_o[aux_o]=3;
                 aux_o+=1;
+                total+=1;
                 break;
             case 'cell_4':
                 gameboard_o[aux_o]=4;
                 aux_o+=1;
+                total+=1;
                 break;
             case 'cell_5':
                 gameboard_o[aux_o]=5;
                 aux_o+=1;
+                total+=1;
                 break;
             case 'cell_6':
                 gameboard_o[aux_o]=6;
                 aux_o+=1;
+                total+=1;
                 break;
             case 'cell_7':
                 gameboard_o[aux_o]=7;
                 aux_o+=1;
+                total+=1;
                 break;
             case 'cell_8':
                 gameboard_o[aux_o]=8;
                 aux_o+=1;
+                total+=1;
                 break;
             case 'cell_9':
                 gameboard_o[aux_o]=9;
                 aux_o+=1;
+                total+=1;
                 break;
         }
     }
@@ -155,25 +177,26 @@ function winTheGame(){
                 num=0;
             }
         }
-    }else if(aux_x==5 && aux_o==4 && num!=3){
+    }else if(total==8){
         playerWon(3);
     }
     
 }
 
 function playerWon(playerNumber){
-    let playerOne = document.getElementById('x').innerHTML;
-    let playerTwo = document.getElementById('o').innerHTML;
-    let velha = document.getElementById('v').innerHTML;
+
 
     if(playerNumber==1){
-        document.getElementById('x').innerHTML = playerOne + 1;
+        playerOne+=1;
+        document.getElementById('x').innerHTML=playerOne;
         restartGame();
     }else if(playerNumber==2){
-        document.getElementById('o').innerHTML = playerTwo + 1;
+        playerTwo+=1;
+        document.getElementById('o').innerHTML=playerTwo;
         restartGame();
     }else{
-        document.getElementById('v').innerHTML = velha + 1;
+        velha+=1;
+        document.getElementById('v').innerHTML=velha;
         restartGame();
     }
 }
