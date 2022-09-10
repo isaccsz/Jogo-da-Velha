@@ -105,8 +105,6 @@ function playerTurn(numID){
     }
 
     winTheGame();
-    winTheGame();
-
 }
 
 function winTheGame(){
@@ -125,7 +123,6 @@ function winTheGame(){
                 }
             }
             if(num==3){
-                alert("Player 1 venceu!!");
                 break;
             }
         }
@@ -147,7 +144,6 @@ function winTheGame(){
                     }
                 }
                 if(num==3){
-                    alert("Player 2 venceu!!");
                     break;
                 }
             }
