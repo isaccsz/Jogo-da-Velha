@@ -35,6 +35,8 @@ tr, td{
     text-align: center;
     cursor: pointer;
     background-color: blueviolet;
+    width: 32%;
+    height: 32%;
 }
 
 #placar{
