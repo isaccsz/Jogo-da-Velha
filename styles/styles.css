@@ -80,3 +80,12 @@ a:hover{
     color: white;
     transition: .3s all;
 }
+
+td:hover{
+    background-color: rgb(97, 28, 97);
+    transition: 0.9s all;
+}
+
+td:active{
+    background-color: white;
+}

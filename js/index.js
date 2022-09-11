@@ -22,6 +22,12 @@ const winningSequences = [
 
 function playerTurn(numID){
     let outplay = document.getElementById(numID).innerHTML;
+
+    if(player==1){
+        document.getElementById('showPlayer').innerHTML = 'Jogador: O';
+    }else{
+        document.getElementById('showPlayer').innerHTML = 'Jogador: X'
+    }
     if(player==1 && outplay!='O' && outplay!='X'){
         document.getElementById(numID).innerHTML = 'X';
         player = 2;
