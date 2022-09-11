@@ -21,14 +21,19 @@ main{
     width: 40%;
     height: 80%;
     background-color: rgba(204, 204, 204, 0.3);
+    overflow: none;
+    border-radius: 15px;
 }
 
 caption{
+    color: white;
     margin: 5% 0;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     border-radius: 15px;
-    text-shadow: 2px 2px 1px #ccc;
+    text-shadow: 4px 3px 1px black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 table{
@@ -44,6 +49,7 @@ tr, td{
     background-color: blueviolet;
     width: 32%;
     height: 32%;
+    border-radius: 30%;
 }
 
 #placar{

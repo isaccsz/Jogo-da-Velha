@@ -7,6 +7,7 @@ let total = 0;
 let playerOne = 0;
 let playerTwo = 0;
 let velha = 0;
+let winner = [3];
 
 const winningSequences = [
     [1,2,3],
@@ -21,7 +22,7 @@ const winningSequences = [
 
 function playerTurn(numID){
     let outplay = document.getElementById(numID).innerHTML;
-    if(player==1 && outplay!='O'){
+    if(player==1 && outplay!='O' && outplay!='X'){
         document.getElementById(numID).innerHTML = 'X';
         player = 2;
         
@@ -73,7 +74,7 @@ function playerTurn(numID){
                 break;
         }
 
-    }else if(outplay !='X'){
+    }else if(outplay !='X' && outplay!='O'){
         document.getElementById(numID).innerHTML = 'O';
         player = 1;
 
@@ -123,7 +124,10 @@ function playerTurn(numID){
                 aux_o+=1;
                 total+=1;
                 break;
+    
         }
+    }else{
+        alert("Posição ocupada");
     }
 
     winTheGame();
