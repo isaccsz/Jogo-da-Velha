@@ -214,6 +214,7 @@ function playerWon(playerNumber){
 
 function restartGame(){
     player = 1;
+    document.getElementById('showPlayer').innerHTML='Jogador: X';
     gameboard_x = [0, 0, 0, 0, 0];
     gameboard_o = [0, 0, 0, 0];
     aux_x = 0;
