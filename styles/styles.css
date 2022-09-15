@@ -26,6 +26,7 @@ main{
 }
 
 caption{
+    font-size: 20px;
     color: white;
     margin: 5% 0;
     border-bottom: 1px solid black;
@@ -68,7 +69,7 @@ footer{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    height: 7%;
+    height: 6%;
     border-top: 1px solid black;
 }
 

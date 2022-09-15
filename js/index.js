@@ -34,46 +34,55 @@ function playerTurn(numID){
         
         switch(numID){
             case 'cell_1':
+                document.getElementById('cell_1').style.background = 'blue'
                 gameboard_x[aux_x]=1;
                 aux_x+=1;
                 total+=1;
                 break;
             case 'cell_2':
+                document.getElementById('cell_2').style.background = 'blue'
                 gameboard_x[aux_x]=2;
                 aux_x+=1;
                 total+=1;
                 break;
             case 'cell_3':
+                document.getElementById('cell_3').style.background = 'blue'
                 gameboard_x[aux_x]=3;
                 aux_x+=1;
                 total+=1;
                 break;
             case 'cell_4':
+                document.getElementById('cell_4').style.background = 'blue'
                 gameboard_x[aux_x]=4;
                 aux_x+=1;
                 total+=1;
                 break;
             case 'cell_5':
+                document.getElementById('cell_5').style.background = 'blue'
                 gameboard_x[aux_x]=5;
                 aux_x+=1;
                 total+=1;
                 break;
             case 'cell_6':
+                document.getElementById('cell_6').style.background = 'blue'
                 gameboard_x[aux_x]=6;
                 aux_x+=1;
                 total+=1;
                 break;
             case 'cell_7':
+                document.getElementById('cell_7').style.background = 'blue'
                 gameboard_x[aux_x]=7;
                 aux_x+=1;
                 total+=1;
                 break;
             case 'cell_8':
+                document.getElementById('cell_8').style.background = 'blue'
                 gameboard_x[aux_x]=8;
                 aux_x+=1;
                 total+=1;
                 break;
             case 'cell_9':
+                document.getElementById('cell_9').style.background = 'blue'
                 gameboard_x[aux_x]=9;
                 aux_x+=1;
                 total+=1;
@@ -229,4 +238,14 @@ function restartGame(){
     document.getElementById('cell_7').innerHTML = '';
     document.getElementById('cell_8').innerHTML = '';
     document.getElementById('cell_9').innerHTML = '';
+
+    document.getElementById('cell_1').style.background = '';
+    document.getElementById('cell_2').style.background = '';
+    document.getElementById('cell_3').style.background = '';
+    document.getElementById('cell_4').style.background = '';
+    document.getElementById('cell_5').style.background = '';
+    document.getElementById('cell_6').style.background = '';
+    document.getElementById('cell_7').style.background = '';
+    document.getElementById('cell_8').style.background = '';
+    document.getElementById('cell_9').style.background = '';
 }
