@@ -65,10 +65,15 @@ tr, td{
 }
 
 footer{
-    height: 10%;
-    line-height: 10%;
-    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 7%;
     border-top: 1px solid black;
+}
+
+footer h3{
+    margin: 0 auto;
 }
 
 a{
@@ -79,8 +84,6 @@ a{
 td:hover{
     background-color: rgb(97, 28, 97);
     transition: 0.5s;
-    transition-duration: 1s, 1s;
-    transition-delay: .2s;
 }
 
 td:active{
