@@ -95,46 +95,55 @@ function playerTurn(numID){
 
         switch(numID){
             case 'cell_1':
+                document.getElementById('cell_1').style.background = 'red'
                 gameboard_o[aux_o]=1;
                 aux_o+=1;
                 total+=1;
                 break;
             case 'cell_2':
+                document.getElementById('cell_2').style.background = 'red'
                 gameboard_o[aux_o]=2;
                 aux_o+=1;
                 total+=1;
                 break;
             case 'cell_3':
+                document.getElementById('cell_3').style.background = 'red'
                 gameboard_o[aux_o]=3;
                 aux_o+=1;
                 total+=1;
                 break;
             case 'cell_4':
+                document.getElementById('cell_4').style.background = 'red'
                 gameboard_o[aux_o]=4;
                 aux_o+=1;
                 total+=1;
                 break;
             case 'cell_5':
+                document.getElementById('cell_5').style.background = 'red'
                 gameboard_o[aux_o]=5;
                 aux_o+=1;
                 total+=1;
                 break;
             case 'cell_6':
+                document.getElementById('cell_6').style.background = 'red'
                 gameboard_o[aux_o]=6;
                 aux_o+=1;
                 total+=1;
                 break;
             case 'cell_7':
+                document.getElementById('cell_7').style.background = 'red'
                 gameboard_o[aux_o]=7;
                 aux_o+=1;
                 total+=1;
                 break;
             case 'cell_8':
+                document.getElementById('cell_8').style.background = 'red'
                 gameboard_o[aux_o]=8;
                 aux_o+=1;
                 total+=1;
                 break;
             case 'cell_9':
+                document.getElementById('cell_9').style.background = 'red'
                 gameboard_o[aux_o]=9;
                 aux_o+=1;
                 total+=1;
