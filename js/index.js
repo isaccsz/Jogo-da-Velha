@@ -177,7 +177,6 @@ function winTheGame(){
             }
         }
         if(num==3){
-            playerWinAnimation(i);
             playerWon(1);
             break;
         }else{
@@ -200,7 +199,6 @@ function winTheGame(){
                 }
             }
             if(num==3){
-                playerWinAnimation(i);
                 playerWon(2);
                 break;
             }else{
@@ -232,44 +230,6 @@ function playerWon(playerNumber){
         document.getElementById('v').innerHTML=velha;
         alert("Deu Velha!!!");
         restartGame();
-    }
-}
-
-function playerWinAnimation(sequence){
-    let i = 0;
-
-    for(i=0;i<3;i++){
-
-        switch(winningSequences[sequence][i]){
-            
-            case 1:
-                document.getElementById('cell_1').style.background = 'yellow';
-                break;
-            case 2:
-                document.getElementById('cell_2').style.background = 'yellow'
-                break;
-            case 3:
-                document.getElementById('cell_3').style.background = 'yellow'
-                break;
-            case 4:
-                document.getElementById('cell_4').style.background = 'yellow'
-                break;
-            case 5:
-                document.getElementById('cell_5').style.background = 'yellow'
-                break;
-            case 6:
-                document.getElementById('cell_6').style.background = 'yellow'
-                break;
-            case 7:
-                document.getElementById('cell_7').style.background = 'yellow'
-                break;
-            case 8:
-                document.getElementById('cell_8').style.background = 'yellow'
-                break;
-            case 9:
-                document.getElementById('cell_9').style.background = 'yellow'
-                break;
-        }
     }
 }
 
